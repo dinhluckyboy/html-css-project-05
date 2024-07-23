@@ -102,3 +102,84 @@ p.desc {
   font-weight: 400;
   line-height: 1.67em; /* 166.667% */
 }
+
+/* header  */
+
+header.header {
+  padding: 42px 0 24px;
+  background-color: #fff;
+}
+
+header.sticky {
+  position: sticky;
+  top: -18px;
+  left: 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 70px;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header__nav ul li {
+  padding: 0 24px;
+  color: var(--text-desc-color);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75em; /* 175% */
+}
+
+.header__nav ul li.active {
+  position: relative;
+  color: var(--text-primary-color);
+  font-weight: 600;
+}
+
+.header__nav ul li.active::before {
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 47px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #7264d6;
+}
+
+.header__nav ul li:hover {
+  color: var(--text-primary-color);
+}
+
+.header__link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.header__link .log-in {
+  color: var(--text-primary-color);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75em; /* 175% */
+  flex-shrink: 0;
+}
+
+.header__link a.btn.sign-up {
+  border-radius: 6px;
+}
