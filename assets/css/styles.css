@@ -460,3 +460,247 @@ header.sticky {
   font-weight: 400;
   line-height: 1.75em; /* 175% */
 }
+
+/* payment  */
+
+.payment {
+  margin-top: 160px;
+}
+
+.payment__content {
+  display: flex;
+  column-gap: 130px;
+}
+
+.payment__info {
+  width: 40%;
+}
+
+.payment__desc {
+  margin-top: 20px;
+}
+
+.payment__list {
+  margin-top: 28px;
+}
+
+.payment__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  color: var(--text-primary-color);
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66em; /* 166.667% */
+}
+
+.payment__item::before {
+  margin-right: 12px;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #7264d6;
+  border-radius: 50%;
+}
+
+a.btn.payment__btn {
+  margin-top: 20px;
+  width: 149px;
+  height: 58px;
+}
+
+.payment__media {
+  position: relative;
+  width: 49%;
+}
+
+.payment__media::after {
+  content: url(../img/payment-card.svg);
+  position: absolute;
+  left: 0;
+  top: 86px;
+  z-index: -1;
+}
+
+.payment__card:first-of-type {
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  width: 276px;
+  height: 86px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.payment__plane {
+  margin-right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fbf0ef;
+  border-radius: 8px;
+}
+
+.payment__row-card1 {
+  display: flex;
+  column-gap: 67px;
+  flex-shrink: 0;
+}
+
+.payment__row-card1 .col:first-child p:first-child {
+  color: var(--text-primary-color);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payment__row-card1 .col:first-child p:last-child {
+  margin-top: 4px;
+  color: var(--text-desc-color);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__row-card1 .col:last-child p:first-child {
+  color: var(--text-primary-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__row-card1 .col:last-child p:last-child {
+  margin-top: 4px;
+  color: var(--text-desc-color);
+  text-align: right;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__card:nth-of-type(2) {
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: #439f90;
+}
+
+.payment__income {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.payment__card:nth-of-type(2) p:first-of-type {
+  margin-top: 14px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__card:nth-of-type(2) p:last-child {
+  margin-top: 6px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.payment__user-info {
+  padding: 38px;
+  position: absolute;
+  left: 0;
+  top: 86px;
+  width: 482px;
+  height: 322px;
+}
+
+.payment__name-card {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__balance {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.payment__row {
+  margin-top: 98px;
+  display: flex;
+  column-gap: 26px;
+}
+
+.payment__col:first-child p:first-child {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.payment__col:first-child p:last-child {
+  margin-top: 4px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.payment__col:last-child p:first-child {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.payment__col:last-child p:last-child {
+  margin-top: 4px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
