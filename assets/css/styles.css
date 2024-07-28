@@ -704,3 +704,121 @@ a.btn.payment__btn {
   font-weight: 400;
   line-height: normal;
 }
+
+/* transfer  */
+
+.transfer {
+  padding: 160px 0;
+}
+
+.transfer__content {
+  display: flex;
+  column-gap: 130px;
+}
+
+.transfer__media {
+  position: relative;
+  width: 49%;
+  flex-shrink: 0;
+}
+
+.transfer__bg {
+  width: 82%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.transfer__img {
+  width: 72%;
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 29px;
+}
+
+.transfer__currency-unit {
+  width: 90px;
+  height: 90px;
+  background-color: #7264d6;
+  border-radius: 50%;
+  position: absolute;
+  top: 288px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transfer__card {
+  padding: 28px;
+  position: absolute;
+  top: 323px;
+  right: 0;
+  width: 281px;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.transfer__card p {
+  color: var(--text-primary-color);
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.67em; /* 166.667% */
+}
+
+.transfer__card-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+.transfer__card-list img {
+  width: 100%;
+}
+
+.transfer__info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.transfer__desc {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.transfer__item {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--text-primary-color);
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.67em; /* 166.667% */
+}
+
+.transfer__item::before {
+  margin-right: 12px;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #7264d6;
+  border-radius: 50%;
+}
+
+a.btn.transfer__btn {
+  margin-top: 38px;
+  width: 149px;
+  height: 58px;
+}
