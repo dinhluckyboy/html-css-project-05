@@ -822,3 +822,147 @@ a.btn.transfer__btn {
   width: 149px;
   height: 58px;
 }
+
+/* clients  */
+
+.clients {
+  text-align: center;
+  padding-bottom: 160px;
+}
+
+.client__sub-title {
+  justify-content: center;
+}
+
+.client__desc {
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 39%;
+}
+
+.client__list {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.client__item {
+  width: calc(50% -15px);
+}
+
+.client__feedback {
+  position: relative;
+  padding: 42px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #dfe2e8;
+  color: var(--text-desc-color);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54em; /* 154.545% */
+}
+
+.client__feedback:hover {
+  border-color: transparent;
+  filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.client__feedback:hover.client__feedback::before {
+  border-color: transparent;
+}
+
+.client__feedback::before {
+  position: absolute;
+  z-index: -2;
+  bottom: -25px;
+  left: calc(50% - 31px);
+  transform: skew(30deg);
+  rotate: 59deg;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #dfe2e8;
+}
+
+.client__feedback::after {
+  position: absolute;
+  bottom: -1px;
+  left: calc(50% - 30px);
+  content: "";
+  width: 56px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.client__avt {
+  margin-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 102px;
+  height: 102px;
+  background-color: #4ab5e3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.client__img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.client__avt:nth-of-type(2) .client__img {
+  width: 150%;
+  height: 150%;
+  margin-top: 5px;
+}
+
+.client__name {
+  margin-top: 20px;
+  color: #070052;
+  font-family: "Open Sans";
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.38em; /* 138.462% */
+}
+
+.client__job {
+  margin-top: 2px;
+  color: var(--text-desc-color);
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67em; /* 166.667% */
+}
+
+.client__nav {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.client__nav-item {
+  width: 20px;
+  height: 4px;
+  border: 1px solid #9b9fab;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.client__nav-item.active {
+  background-color: #7264d6;
+  border-color: #7264d6;
+}
