@@ -91,7 +91,7 @@ p.sub-title::before {
   margin-right: 12px;
   width: 18px;
   height: 2px;
-  background-color: #696d77;
+  background-color: currentColor;
 }
 
 p.desc {
@@ -1053,4 +1053,70 @@ a.btn.update__btn {
   font-style: normal;
   font-weight: 400;
   line-height: 1.62em; /* 162.5% */
+}
+
+/* download  */
+
+.download {
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.download__bg {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--primary-color);
+  border-radius: 24px;
+}
+
+p.download__sub-title {
+  color: #fff;
+  justify-content: center;
+}
+
+h2.title.download__title {
+  color: #fff;
+  text-align: center;
+}
+
+p.desc.download__desc {
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 435px;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.75em;
+}
+
+.download__link {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.download__decor img:nth-child(1) {
+  position: absolute;
+  top: 49px;
+  left: 112px;
+}
+
+.download__decor img:nth-child(2) {
+  position: absolute;
+  bottom: 49px;
+  left: 166px;
+}
+
+.download__decor img:nth-child(3) {
+  position: absolute;
+  top: 49px;
+  right: 112px;
+}
+
+.download__decor img:nth-child(4) {
+  position: absolute;
+  bottom: 49px;
+  right: 166px;
 }
