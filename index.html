@@ -91,6 +91,8 @@
       content="./assets/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <!-- animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body style="height: 5000px">
     <header class="header sticky">
@@ -146,7 +148,7 @@
                 alt=""
                 class="hero__mobile"
               />
-              <div class="hero__deposite">
+              <div class="hero__deposite" data-aos="fade-right">
                 <img
                   src="./assets/img/hero-deposite.svg"
                   alt=""
@@ -155,7 +157,11 @@
                 <p class="hero__deposite-text">Deposite</p>
                 <p class="hero__deposite-text">$32000</p>
               </div>
-              <div class="hero__secured">
+              <div
+                class="hero__secured"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
                 <img
                   src="./assets/img/hero-secured.svg"
                   alt=""
@@ -166,7 +172,11 @@
                   <p class="hero__secured-text">SECURED FUNDS</p>
                 </div>
               </div>
-              <div class="hero__interest">
+              <div
+                class="hero__interest"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
                 <p class="hero__interest-text">0%</p>
                 <p class="hero__interest-text">Interest</p>
               </div>
@@ -180,14 +190,18 @@
           <div class="work__content">
             <div class="work__media">
               <img src="./assets/img/work-img.png" alt="" class="work__img" />
-              <div class="work__logo">
+              <div class="work__logo" data-aos="flip-left">
                 <img
                   src="./assets/img/work-logo.svg"
                   alt=""
                   class="work__logo-img"
                 />
               </div>
-              <div class="work__congratulation">
+              <div
+                class="work__congratulation"
+                data-aos="flip-left"
+                data-aos-delay="300"
+              >
                 <img
                   src="./assets/img/work-congratulations.svg"
                   alt=""
@@ -250,7 +264,11 @@
               <a href="#!" class="btn payment__btn">Get Started</a>
             </section>
             <div class="payment__media">
-              <div class="payment__card">
+              <div
+                class="payment__card"
+                data-aos="fade-down"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <div class="payment__plane">
                   <img
                     src="./assets/img/payment-plane.svg"
@@ -269,7 +287,11 @@
                   </div>
                 </div>
               </div>
-              <div class="payment__card">
+              <div
+                class="payment__card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
                 <div class="payment__income">
                   <img
                     src="./assets/img/payment-income.svg"
@@ -526,10 +548,30 @@
             <img src="./assets/img/download-gg.svg" alt="" />
           </div>
           <div class="download__decor">
-            <img src="./assets/img/download-decor.svg" alt="" />
-            <img src="./assets/img/download-decor.svg" alt="" />
-            <img src="./assets/img/download-decor.svg" alt="" />
-            <img src="./assets/img/download-decor.svg" alt="" />
+            <img
+              src="./assets/img/download-decor.svg"
+              alt=""
+              data-aos="zoom-out"
+              data-aos-duration="3000"
+            />
+            <img
+              src="./assets/img/download-decor.svg"
+              alt=""
+              data-aos="zoom-out"
+              data-aos-duration="3000"
+            />
+            <img
+              src="./assets/img/download-decor.svg"
+              alt=""
+              data-aos="zoom-out"
+              data-aos-duration="3000"
+            />
+            <img
+              src="./assets/img/download-decor.svg"
+              alt=""
+              data-aos="zoom-out"
+              data-aos-duration="3000"
+            />
           </div>
         </div>
       </section>
@@ -590,5 +632,9 @@
       </div>
       <p class="license">© 2020 Ligft Media All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
