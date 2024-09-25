@@ -7,6 +7,7 @@
     <!-- css  -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,12 +96,28 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body style="height: 5000px">
+    <!-- header  -->
     <header class="header sticky">
       <div class="container header__content">
+        <!-- bars mobile  -->
+        <label for="check-bars" class="bars-mobile">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            fill="currentColor"
+          >
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+        <!-- logo  -->
         <div class="header__logo">
           <a href="#!"><img src="./assets/img/Logo.svg" alt="" /></a>
         </div>
-        <div class="header__nav">
+        <!-- nav  -->
+        <div class="header__nav hide-on-tablet-mobile">
           <ul>
             <li class="active"><a href="#!">Home</a></li>
             <li><a href="#!">Products</a></li>
@@ -111,6 +128,31 @@
         <div class="header__link">
           <a href="#!" class="log-in">Log in</a>
           <a href="#!" class="btn sign-up">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <!-- mobile header  -->
+    <header class="mobile-header hide-on-pc">
+      <!-- check bars  -->
+      <input
+        type="checkbox"
+        name="check-bars"
+        id="check-bars"
+        class="check-bars"
+        hidden
+      />
+      <!-- menu-overlay  -->
+      <label for="check-bars" class="menu-overlay"></label>
+      <!-- menu-drawer  -->
+      <div class="menu-drawer">
+        <!-- nav mobile -->
+        <div class="nav-mobile">
+          <ul>
+            <li class="active"><a href="#!">Home</a></li>
+            <li><a href="#!">Products</a></li>
+            <li><a href="#!">Features</a></li>
+            <li><a href="#!">Blog</a></li>
+          </ul>
         </div>
       </div>
     </header>
